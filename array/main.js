@@ -46,7 +46,6 @@ function sumStartAt(array,index){
     return result
 }
 
-
 //  6.Write a function called sumUntil that takes an array of numbers, 
 // and an index as parameters and returns the summation of every number
 //  starting from the index 0, until the index parameter.
@@ -62,9 +61,6 @@ function sumUntil(array,index){
     }
     return result
 }
-
-
-
 }
 
 
@@ -79,10 +75,6 @@ function sumUntil(array,index){
         }
         return result
     }
-
-    
-    
-    
     
      //  8.Write a function called product that takes an array as a parameter and 
     //  returns the product of all the elements in the array.
@@ -95,3 +87,57 @@ function sumUntil(array,index){
         return result
 
     }
+
+
+    //9 write a function called average that takes an array as 
+
+    function average(array){
+        result=0
+        for (i=0;i<array.length;i++){
+            result+=array[i]
+        }
+        return (result/(array.length))
+    }
+
+    //10 write a function called square 
+
+    function square(array){
+        arraysquare=[]
+        for (i=0;i<array.length;i++){
+            arraysquare.push(Math.sqrt(array[i]))
+    }
+    return arraysquare
+}
+
+// 11 . write a function called isArray that takes one parametre and returns true if the input is array otherwhise returns false 
+        function isArray(param)
+        {
+            if (typeof(param)==='array')
+            return true
+       
+        else 
+        return false
+    }
+
+    //EXTENDED
+   // 1.write a function called min that takes an array as a parametre and returns the smallest number from the array
+
+        function mini(array){
+            for(i=0;i<=array.length;i++){
+                if (array[i]< array[i+1])
+                result=array[i]
+            }
+            return result
+
+        }
+
+        // 1.write a function called max that takes an array as a parametre and returns the largest number from the array
+         
+        function max(array){
+            for(i=0;i<=array.length;i++){
+                if (array[i]> array[i+1])
+                result=array[i]
+            }
+            return result
+
+        }
